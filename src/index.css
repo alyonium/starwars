@@ -5,9 +5,56 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000000;
 }
 
-code {
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  height: 100vh;
+}
+
+.main span {
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 100px);
+}
+
+* {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace !important;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-image: url(/public/logo-starwars.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background:#f6df19;
+  color: #000;
+  transition: 0.2s;
+}
+
+button:active {
+  border: 2px solid #000;
 }

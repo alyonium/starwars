@@ -35,6 +35,8 @@ module.exports = {
     'react/function-component-definition': 0,
     'arrow-body-style': 0,
     'no-use-before-define': 'off',
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
     '@typescript-eslint/no-use-before-define': ['error'],
     'import/extensions': [
       'error',
